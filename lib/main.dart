@@ -508,7 +508,7 @@ class _StokAppState extends State<StokApp> {
   Future<void> _importBackup() async {
     _feedback();
     try {
-      final result = await FilePicker.platform.pickFiles(
+      final result = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions: ['json'],
         withData: true,
